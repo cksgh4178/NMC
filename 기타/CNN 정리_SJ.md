@@ -14,7 +14,7 @@
 
 # 2. CNN의 특징 및 관련 용어 정리
 
-##2.1 Convolution
+## 2.1 Convolution
 
 - Convolution의 사전적 정의는 '합성곱'
 
@@ -47,7 +47,7 @@
 
   ​
 
-##2.4 Padding
+## 2.4 Padding
 
 - `Convolution` 레이어에서는`filter` 와 `stride` 의 작용으로 `Feature map`의 크기는 입력데이터보다 작아질 수 밖에 없음.
   - 특히 가장 자리 정보들이 지속적으로 손실 됨.
@@ -57,7 +57,7 @@
 
 ![Picture7](https://user-images.githubusercontent.com/15958325/58846398-ff313f00-86b9-11e9-8268-7989df7d38f2.png)
 
-##2.5 Pooling
+## 2.5 Pooling
 
 -   `padding`과정을 통해 원본 이미지의 크기를 계속해서 유지한 채 `FC(Fully Connected)`로 넘어가게 된다면 기존의 문제였던 연산량 문제를 해결할 수 없음.
 - 특징을 잘 추출하면서, 적당히 크기도 줄이는 것이 중요함. 그 역할을 하는 것이`pooling`.
