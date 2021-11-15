@@ -1,3 +1,4 @@
+```python
 # -*- coding: utf-8 -*-
 """
 Created on Tue Nov  9 11:45:22 2021
@@ -128,3 +129,4 @@ print(f'test MAE:{test_mae}')
 
 target = [[0.006099]]
 scaler.inverse_transform(target)
+```
