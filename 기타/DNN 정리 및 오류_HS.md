@@ -1,3 +1,4 @@
+```python
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -29,16 +30,15 @@ y = data_pre['R_ETW']
 #y = scaler.transform(y)
 
 class TensorData(Dataset):
-
     def __init__(self, x_data, y_data):
         self.x_data = x_data
         self.y_data = y_data
         self.len = self.y_data.shape[0]
-
+    
     def __getitem__(self, index):
-
+    
         return self.x_data[index], self.y_data[index] 
-
+    
     def __len__(self):
         return self.len
 
@@ -92,7 +92,7 @@ class Regressor(nn.Module):
         x = F.relu(self.fc6(self.fc5(x))) # Linear 계산 후 활성화 함수 ReLU를 적용한다.
         
         return x
-    
+
 model = Regressor()
 criterion = nn.MSELoss()
 optimizer = optim.Adam(model.parameters(), lr=0.0001)
@@ -135,3 +135,4 @@ for epoch in range(1000):
         test_loss_summary = 0.0
         
         ### IndexError: too many indices for tensor of dimension 2
+```
