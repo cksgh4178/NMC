@@ -20,6 +20,7 @@ import torch
 import torch.nn as nn
 
 class inception_module(nn.Module):
+
     def __init__(self, in_dim, out_dim1, mid_dim3, out_dim3, mid_dim5, out_dim5, pool):
         super(inception_module, self).__init__()
         self.conv1 = nn.Sequential(
@@ -53,6 +54,7 @@ class inception_module(nn.Module):
         return out
 
 class GoogleNet(nn.Module):
+
     def __init__(self, base_dim, batch_size, num_classes=2):
         super(GoogleNet, self).__init__()
         self.batch_size = batch_size
