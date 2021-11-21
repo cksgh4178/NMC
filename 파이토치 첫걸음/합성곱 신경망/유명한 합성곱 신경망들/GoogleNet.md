@@ -12,6 +12,7 @@
 * 1 X 1 합성곱 연산을 통해 모델의 연산량을 줄이는 것이 핵심
 	* 1 X 1 합성곱 연산은 결국 fc_layer와 동일함 
 * 1 X 1 합성곱 연산으로 연산량을 줄여 깊은 모델을 구성하는 것이 가능하지만 모델이 깊어 학습이 잘되지 않는 문제는 보조 분류기 (auxiliary classifier)를 통해 해결
+
 ![그림](https://miro.medium.com/max/550/1*htr2D6tKh3JMS7Acy4BDTw.png)
 
 ```python
