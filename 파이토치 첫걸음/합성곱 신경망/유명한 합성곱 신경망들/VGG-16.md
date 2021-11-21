@@ -27,6 +27,7 @@ def conv_3block(in_dim, out_dim):
     return model
 
 class VGG_16(nn.Module):
+
     def __init__(self, base_dim, num_classes = 2):
         super(VGG_16, self).__init__()
         self.feature = nn.Sequential(
